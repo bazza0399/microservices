@@ -19,8 +19,8 @@ public class ClientApplication {
 	 @Bean
 	    ApplicationRunner init(ClientRepository repository) {
 	        return args -> {
-	            Stream.of("Mariem", "Sarra", "Mohamed").forEach(nom -> {
-	                repository.save(new Client(nom));
+	            Stream.of("Ahmed", "Youssef", "Achref").forEach(nom -> {
+	                repository.save(new Client(nom, nom, nom + "@gmail.com"));
 	            });
 	            repository.findAll().forEach(System.out::println);
 	        };

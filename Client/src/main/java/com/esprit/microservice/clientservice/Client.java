@@ -49,5 +49,11 @@ public class Client implements Serializable{
 		super();
 		this.nom = nom;
 	}
+	public Client(String nom, String prenom, String email) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+	}
 	
 }
